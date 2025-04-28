@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Akhtar Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Akhtar</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/_MG_4558-removebg-preview.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Akhtar</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Frontend Developer  ',
+						'Backend Developer  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>Mern Stack Developer</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.youtube.com/channel/UCNFXLJHIlbAjFpY8WteBkmQ" class="btn btn-primary py-3 px-4">YouTube</a> 
+							<a href="https://github.com/Akh1tar12" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/akhtar1.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Akhtar</span></p>
+										<p><span class="title-s">Branch: </span> <span>Data Science</span></p>
+										<p><span class="title-s">College: </span> <span>Oriental College OF Technology, Bhopal</span></p>
+										
+										<p><span class="title-s">Years: </span> <span>2020 to 2024</span></p>
+										
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<ul class="about-info mt-4 px-md-0 px-2">
+										<li class="d-flex"><span>Skills</span></li>
+									</ul>
+									<!-- <p class="title-s">Skills</p> -->
+									<ul class="about-info mt-4 px-md-0 px-2">
+										<li class="d-flex"><span>Frontend</span></li>
+									</ul>
+									<span>PYTHON&nbsp;,</span>
+										<span>HTML&nbsp;,</span>
+										<span>Cascading Style Sheets (CSS)&nbsp;,</span>
+										<span>BootStrap&nbsp;,</span> 
+										<span>JavaScript&nbsp;,</span>
+										<span>React.js&nbsp;,</span>
+										<span>MongoDB&nbsp;</span>
+										
+
+
+										<ul class="about-info mt-4 px-md-0 px-2">
+											<li class="d-flex"><span>Backend</span></li>
+										</ul>
+										<span>Express.js&nbsp;,</span>
+										<span>Node.js&nbsp;,</span>
+										<span>MongoDB&nbsp;,</span>
+										<span>FireBase&nbsp;,</span>
+										<span>Rest API&nbsp;</span>
+										<ul class="about-info mt-4 px-md-0 px-2">
+											<li class="d-flex"><span>Others</span></li>
+										</ul>
+										<span>FIgma XD&nbsp;,</span>
+										<span>Adobe XD&nbsp;,</span>
+										<span>Canvas&nbsp;,</span>
+										<span>Netlify&nbsp;,</span>
+										<span>Hostinger&nbsp;,</span>
+										<span>Git&nbsp;,</span>
+										<span>Github&nbsp;,</span>
+										<span>AWS&nbsp;</span>
+
+									</div>
+									<div class="skill-mf br">
+										
+										
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I am Computer Science and Engineering student at Oriental College of Technology, Bhopal, where I am passionate about creating innovative software solutions and building a strong foundation in various programming languages and technologies.
+									My primary focus is web development, and I am particularly enthusiastic about working with HTML, CSS, Bootstrap, JavaScript, React.js and Tailwind Css. Node.js, Express.js, MongoDB, RestApi, Firebase
+									Throughout my academic journey, I have been dedicated to continuous learning and improvement. I enjoy tackling challenging projects and am always eager to explore new tools and frameworks thay enhance my skill set. 
+									My goal is to become a proficient full-stack developer, capable of delivering high-quality, scalable applications.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Branch:</span> <span>Data Science</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Web Development</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<!-- <li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Python, Tableau &amp; Machine Learning</span></li> -->
+									<li class="d-flex"><span>Skills:</span> <span>HTML, CSS, JavaScript, BootStrap, React.js, Node.js, Express.js, FireBase, Api ,MongoDB, Git/GitHub,UI/UX </span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Cooking</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="8">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/akhtar-0b9b38212/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Resume</h1>
+            <h2 class="mb-4">Resume</h2>
+            <p>I am Computer Science student at Oriental College of Technology, Bhopal, passionate about web development. Skilled in HTML, CSS, JavaScript, React.js, Node.js, and MongoDB, I aim to become a proficient full-stack developer delivering scalable, high-quality applications.</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2023-2024</span>
+						<h2>Suven Consultants & Tech. Pvt. Ltd	</h2>
+						<span class="position">Web Developer Intern</span>
+						<p class="mt-4"> 
+							<ul>
+								<li>Built an interactive educational website using React, boosting user engagement by 30% and enhancing retention by 25%.</li>
+								<li>Integrated custom components and seamless navigation, delivering over 1,000 resources with high accessibility and responsiveness.</li>
+								<li>Performed migration and enhancements for merchandising Website.</li>
+
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2024-2024</span>
+						<h2>Brainwave Matrix Solutions
+						</h2>
+						<span class="position">Full Stack Developer Intern</span>
+						<p class="mt-4"> 
+							<ul>
+								<li>Engineered a fully functional clone of the Jobfiner job finer website, leveraging HTML, CSS, JavaScript, Node.js, and React.</li>
+								<li>Improved loading times by 50% and reduced bounce rates through effective design strategies</li>
+								<li>alongside the development of an Advanced TODO List application with Node.js, React.js, and Firebase for authentication and data storage.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2024</span>
+    					<h2>Bachelor of Technology </h2>
+    					<span class="position">Oriental College OF Technology, Bhopal</span>
+    					 
+						<p class="mt-4">CGPA: 8.25</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017 to 2019</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Saheed Sakti Nath Matho Inter College, Sijua</span>
+    					<p class="mt-4">Percentage: 48.7%</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="https://drive.google.com/file/d/1B-nQkGNI1EN8y8-g_V3gGTYdWlC7zVPJ/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Web Development on Frontend & Backend With API.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://chatspatium.netlify.app/" class="block-20 zoom-effect" style="background-image: url('images/Screenshot\ 2025-04-28\ 165101.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://chatspatium.netlify.app/">Chat App</a></h3>
+                <p>Create a real-time chat application with 100% responsive design for seamless cross-device communication.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://www.reddybookclub.info/" class="block-20 zoom-effect" style="background-image: url('images/Screenshot\ 2025-04-28\ 165356.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://www.reddybookclub.info/">Reddy Book ESport Gaming Website</a></h3>
+                <p>Organize and participate in real-time gaming competitions with 100% automated match making and leaderboards.
+				</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/Akh1tar12/Job-Finder_MERN_Stack-Website" class="block-20 zoom-effect" style="background-image: url('images/1741499007111.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/Akh1tar12/Job-Finder_MERN_Stack-Website">Job-Finder MERN Stack Website</a></h3>
+                <p>Engineered a fully functional clone of the Jobfiner job finer website, leveraging HTML, CSS, JavaScript, Node.js, and React, improved loading times by 50%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://aspr-food-hotels-restorent-booking-website.vercel.app/" class="block-20 zoom-effect" style="background-image: url('images/p4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://aspr-food-hotels-restorent-booking-website.vercel.app/">food hotels restorent booking website</a></h3>
+				  <p>This website is to booking hotels food and restorent in very reasonable price. After booking my website service to good </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://akh1tar12.github.io/gaming-website/" class="block-20 zoom-effect" style="background-image: url('images/p5.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://akh1tar12.github.io/gaming-website/">Gaming website is provide online gaming platform</a></h3>
+				  <p>This website created live streaming and playing game.
+					This website is to provide the various product to BUY the
+					gaming.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/Akh1tar12/education-website" class="block-20 zoom-effect" style="background-image: url('images/Screenshot\ 2025-04-28\ 180326.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/Akh1tar12/education-website">education website</a></h3>
+				  <p>Developed a dynamic, responsive website using React, featuring interactive courses, user authentication, and seamless navigation for enhanced learning.
+
+				  </p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://my-app-37cw.vercel.app/" class="block-20 zoom-effect" style="background-image: url('images/Screenshot\ 2025-04-28\ 181644.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://my-app-37cw.vercel.app/">Healthcare Dashboard</a></h3>
+				  <p>Built a comprehensive healthcare dashboard integrating multiple data points, leading to a 25% improvement and efficiency using React, CSS, JavaScript</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://creating-a-cash-book-app.vercel.app/Cashbook/ENTER%20NEW%20BdwhgdhwdOOK..." class="block-20 zoom-effect" style="background-image: url('images/Screenshot\ 2025-04-28\ 174519.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://creating-a-cash-book-app.vercel.app/Cashbook/ENTER%20NEW%20BdwhgdhwdOOK...">Cashbook Website</a></h3>
+				  <p>Engineered a Cashbook application with comprehensive Create, Read, Update, and Delete functionality,boosting data management efficiency by 100%.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://www.cicn.in/" class="block-20 zoom-effect" style="background-image: url('images/Screenshot\ 2025-04-28\ 181718.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://www.cicn.in/">CICN-2024 Conference Website</a></h3>
+				  <p>Designed and developed a responsive conference website within one week, optimizing for performance and cross-browser compatibility. 
+					
+					</p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="03">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="10">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="03">0</strong>
+                <span>internship</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="100">0</strong>
+                <span>Cups of coffee</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/Akh1tar12" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>194-c East Kamla Nagar, Bhopal, Madhya Pradesh, India (462022)</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://0101010101">(+91) 7091563779 <br>(+91) 9301601174</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:info@yoursite.com">mdakhtar1910@gmail.com <br>mdalam97981@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <a href="https://drive.google.com/file/d/1yGoijBD35EYffgdl172KqMCxICySwqbT/view?usp=drive_link">Click here</a>
+	          </div>
+          </div>
+
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://docs.google.com/forms/d/12OaQKnKxB5OdLStYMq9ICNDxKf7e1fqBhYl4hP2yYg0/edit" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/channel/UCNFXLJHIlbAjFpY8WteBkmQ"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/akhtar-0b9b38212/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/Akhtar741340867"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.facebook.com/md.akhtar.7587370"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/shehzada7091/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved (Akhtar) 
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
